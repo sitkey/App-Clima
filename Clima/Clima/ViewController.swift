@@ -12,6 +12,7 @@ class ViewController: UIViewController, UITextFieldDelegate, ClimaManagerDelegat
     func huboError(cualError: Error) {
         DispatchQueue.main.async {
             self.ciudadLabel.text = cualError.localizedDescription
+            print(cualError.localizedDescription)
         }
     }
     
