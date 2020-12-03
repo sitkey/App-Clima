@@ -13,6 +13,12 @@ struct ClimaModelo{
     let nombreCiudad: String
     let temperaturaCelcius: Double
     let descripcionClima: String
+    let temp_max: Double
+    let temp_min: Double
+    let sensacion: Double
+    let viento: Double
+    let humedad: Int
+    let presion: Int
     
     var obtenerCondicionClima: String{
         switch condicionID {
@@ -23,7 +29,7 @@ struct ClimaModelo{
         case 600...622:
             return "nevado"
         case 800:
-            return "soleado"
+            return "despejado"
         default:
             return "nublado"
         }
